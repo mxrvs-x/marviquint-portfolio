@@ -1,6 +1,7 @@
 "use client"; // Required for Next.js App Router
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function TechStack() {
   return (
@@ -40,7 +41,7 @@ export default function TechStack() {
               animate={{ y: 1, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.8, ease: "easeOut" }}
             >
-              <img
+              <Image
                 src={skill.image}
                 alt="Technology Logo"
                 className="h-[4vw] w-[4vw] min-h-[40px] min-w-[40px] object-contain drop-shadow-md"
